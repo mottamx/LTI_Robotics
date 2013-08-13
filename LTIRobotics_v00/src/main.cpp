@@ -1,8 +1,8 @@
-#include "ardrone/ardrone.h"
+#include "ardrone.h"
 #include <iostream>
 #include <iomanip>
 #include <time.h>
-
+#include <opencv2/opencv.hpp>
 
 using namespace cv;
 using namespace std;
@@ -25,7 +25,10 @@ int main(){
 		return -1;
 	}
 	cout<<"Bat: "<<ardrone.getBatteryPercentage()<<endl;
-	ardrone.takeoff();
+	sleep(2);
+	cout<<"Bat: "<<ardrone.getBatteryPercentage()<<endl;
+	sleep(2);
+	cout<<"Bat: "<<ardrone.getBatteryPercentage()<<endl;
 	sleep(2);
 	time_t start, end;
 	time (&start);
@@ -33,7 +36,7 @@ int main(){
 	double elapsed=0;
 	namedWindow("dron");
 	namedWindow("dron2");
-	while(elapsed<15){
+	while(elapsed<5){
 		//sleep(2);
 		IplImage *im=ardrone.getImage();
 		Mat img = Mat(im);
@@ -50,7 +53,7 @@ int main(){
 	cout<<"Tiempo: "<<setprecision(3)<<elapsed<<"segundos"<<endl;
 	cout<<"<dios"<<endl;
 
-	ardrone.landing();
 	ardrone.close();
+	ardrone.emergency();
 return 0;
 }

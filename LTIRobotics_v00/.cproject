@@ -25,6 +25,8 @@
 								<option id="gnu.cpp.compiler.exe.debug.option.debugging.level.1458040047" name="Debug Level" superClass="gnu.cpp.compiler.exe.debug.option.debugging.level" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.option.include.paths.1655735068" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
 									<listOptionValue builtIn="false" value="/usr/local/include/opencv2"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LTIRobotics_v00/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LTIRobotics_v00/src/ardrone}&quot;"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.810608982" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
 							</tool>
@@ -56,7 +58,6 @@
 									<listOptionValue builtIn="false" value="opencv_objdetect"/>
 									<listOptionValue builtIn="false" value="pthread"/>
 									<listOptionValue builtIn="false" value="swscale"/>
-									<listOptionValue builtIn="false" value="swresample"/>
 									<listOptionValue builtIn="false" value="avutil"/>
 									<listOptionValue builtIn="false" value="avfilter"/>
 									<listOptionValue builtIn="false" value="avdevice"/>
@@ -153,4 +154,5 @@
 			<resource resourceType="PROJECT" workspacePath="/LTIRobotics_v00"/>
 		</configuration>
 	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
 </cproject>
